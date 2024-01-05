@@ -4,7 +4,7 @@ export function useImages(){
     
     const accessKey = "XnFPa-rR-vQWWlJOEiw9H3OmRNA8ffwgeAA3PZu9wew"
     const url = (pageToGet, query, accessKey) => {
-        return `https://api.unsplash.com/search/photos/?per_page=20&page=${pageToGet}&query=${query}&client_id=${accessKey}&pages=3`
+        return `https://api.unsplash.com/search/photos/?per_page=20&page=${pageToGet}&query=${query}&client_id=${accessKey}`
     }
     const [imagesList, setImagesList] = useState([])
     const [errorMessage, setErrorMessage] = useState(false)
